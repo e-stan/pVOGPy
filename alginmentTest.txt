@@ -1,0 +1,9 @@
+# STOCKHOLM 1.0
+
+#=GS ALA45955.1 DE hypothetical protein PAC5_28 [Propionibacterium phage PAC5]
+
+ALA45955.1         ------------------MLADKTIPATQLARMLTEAGYPISATVIKDYRRKQANTTQKKEEENQ
+#=GR ALA45955.1 PP ..................8********************************************98
+#=GC PP_cons       ..................8********************************************98
+#=GC RF            xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//
