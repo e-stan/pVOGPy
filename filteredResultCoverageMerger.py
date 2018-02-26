@@ -14,6 +14,7 @@ delimiter = ","
 file1 = open(inputCSV,'r')
 
 dataOriginal = file1.readlines()
+[x.strip() for x in dataOriginal]
 headers = dataOriginal[0]
 
 file1.close()
@@ -25,10 +26,12 @@ for x in dataOriginal[1:]:
     numHits = (len(temp)-1)/3
     originalData[temp[0]] = []
     for x in range(numHits):
-        originalData[temp[0]].append([temp[1+(x*4)],[temp[(2+(x*4)):(5+(x*4))]]])
+        originalData[temp[0]].append([temp[1+(x*4)],temp[(2+(x*4)):(5+(x*4))]])
 
 file1 = open(inputCoverage,'r')
 coverageData = file1.readlines()
+[x.strip() for x in coverageData]
+
 
 for x in coverageData[1:]:
     temp = x.split(delimiter)
@@ -47,9 +50,10 @@ for x in originalData:
     file1.write("\n"+x)
     for y in originalData[x]:
         temp = ""
+        print y
         for z in y[1]:
-            print z
-            #temp+=(delimiter+z)
+            #print z
+            temp+=(delimiter+z)
         file1.write(delimiter+y[0]+temp)
 file1.close()
 
