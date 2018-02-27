@@ -71,9 +71,8 @@ for x in filteredData: #output filtered data
     outFile2.write(x)
     y = filteredData[x][0]
     outFile2.write(delimiter+y[0])
-    if len(filteredData[x]) > 1:
+    for y in filteredData[x][:2]:
         outFile2.write(x)
-        y = filteredData[x][1]
         outFile2.write(delimiter+y[0])
         if j+1 < len(filteredData):
             outFile2.write('\n')
