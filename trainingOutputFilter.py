@@ -68,14 +68,11 @@ for x in filteredData: #output filtered data
         for z in y[1]:
             temp += (delimiter+str(z))
         outFile.write(delimiter+y[0]+temp)
-    outFile2.write(x)
-    y = filteredData[x][0]
-    outFile2.write(delimiter+y[0])
     for y in filteredData[x][:2]:
         outFile2.write(x)
         outFile2.write(delimiter+y[0])
-        if j+1 < len(filteredData):
-            outFile2.write('\n')
+        #if j+1 < len(filteredData):
+        outFile2.write('\n')
     j+=1
     
 

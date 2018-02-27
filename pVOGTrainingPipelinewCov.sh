@@ -22,11 +22,13 @@ then
 	python trainingOutputFilter.py $outfile $bitThresh $delimiter
 	rm junk.txt
 	./hmmAlign.sh coverage.txt
+	python filteredResultCoverageMerger.py $outfile coverageResult.txt
 	echo "Run successful! Results in $outfile"
 else
 	echo "Error: size of input is too large. Max number of sequences is $seqMax" > $outfile
 	echo "Error: size of input is too large. Max number of sequences is $seqMax"
 fi
 
+rm coverageResult.txt
 rm *.faaTEMPP
 rm coverage.txt

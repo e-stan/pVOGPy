@@ -5,16 +5,18 @@ Created on Fri Feb 23 17:30:57 2018
 @author: stancliffe
 """
 
-import pandas as pd
+import sys
 
-inputCSV = "t7genome.csv"
-inputCoverage = "coverageResult.txt"
+inputCSV = sys.argv[1]
+inputCoverage = sys.argv[2]
 delimiter = ","
 
 file1 = open(inputCSV,'r')
 
 dataOriginal = file1.readlines()
-[x.strip() for x in dataOriginal]
+temp = []
+for x in dataOriginal: temp.append(x.rstrip())
+dataOriginal = temp
 headers = dataOriginal[0]
 
 file1.close()
@@ -30,7 +32,9 @@ for x in dataOriginal[1:]:
 
 file1 = open(inputCoverage,'r')
 coverageData = file1.readlines()
-[x.strip() for x in coverageData]
+temp = []
+for x in coverageData: temp.append(x.rstrip())
+coverageData = temp
 
 
 for x in coverageData[1:]:
@@ -41,7 +45,7 @@ for x in coverageData[1:]:
           
 file1.close()
 
-file1 = open("Trial"+inputCSV,'w')
+file1 = open(inputCSV,'w')
 maxHits = (len(headers.split(delimiter))-1)/3
 file1.write("#Query Name")
 for x in range(maxHits):
@@ -50,9 +54,7 @@ for x in originalData:
     file1.write("\n"+x)
     for y in originalData[x]:
         temp = ""
-        print y
         for z in y[1]:
-            #print z
             temp+=(delimiter+z)
         file1.write(delimiter+y[0]+temp)
 file1.close()
