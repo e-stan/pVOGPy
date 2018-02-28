@@ -13,9 +13,9 @@ data = file.readlines()
 allAlign = []
 
 for x in data:
-    if not(x.startswith('#') or x.startswith("//")):
-        allAlign.append(x)
-
+    temp = x
+    if not(temp.startswith('#') or temp.startswith("//") or temp.startswith("\n")):
+        allAlign.append(temp.rstrip())
 
 temp = allAlign[0].split()
 length = int(temp[0])
@@ -26,7 +26,7 @@ for x in allAlign[1:]:
 targetLen = len(alignment)
 queryLen = 0
 for c in alignment:
-    if c.isalpha():
+    if c.isupper():
         queryLen+=1.0
 coverage = queryLen/length
 file.close()
