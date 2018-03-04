@@ -32,3 +32,4 @@ fi
 rm coverageResult.txt
 rm *.faaTEMPP
 rm coverage.txt
+rm temp.txt

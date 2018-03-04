@@ -5,6 +5,13 @@ Created on Fri Feb 23 17:30:57 2018
 @author: stancliffe
 """
 
+def goodBit(sample):
+    newSample = sample
+    for y in sample:
+        if not(y[1][1] >= 60 or y[1][-1] >= 60):
+            newSample.remove(y)
+    return newSample
+
 import sys
 
 inputCSV = sys.argv[1]
@@ -52,7 +59,8 @@ for x in range(maxHits):
     file1.write(delimiter+"Target "+str(x+1)+delimiter+"evalue "+str(x+1)+delimiter+"bitscore "+str(x+1)+delimiter+"bias"+str(x+1)+delimiter+"coverage"+str(x+1))
 for x in originalData:
     file1.write("\n"+x)
-    for y in originalData[x]:
+    temp = goodBit(originalData[x])
+    for y in temp:
         temp = ""
         for z in y[1]:
             temp+=(delimiter+z)

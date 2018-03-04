@@ -5,24 +5,32 @@
 outfile="$1.csv"
 databaseName=pVOGDB/pVOGDataBase
 queryName=$1
-ethresh=10e-7
+ethresh=10e-10
 bitThresh=30
 seqMax=1000
 delimiter=,
 
 seqs=$(cat $1 | grep -c ">")
 
+
+
 if [ $seqs -lt $seqMax ]
 then
+	python fastaSplit.py $1
 	/local/vol00/shared/bin/hmmscan --tblout $outfile -E $ethresh $databaseName $queryName > junk.txt
 	#python outputFilter4Pipeline.py $outfile $bitThresh $delimiter
-	python trainingOutputFilter.py $outfile $bitThresh $delimiter
+	python outputFilter.py $outfile $bitThresh $delimiter
 	rm junk.txt
+	./hmmAlign.sh coverage.txt
+	python filteredResultCoverageMerger.py $outfile coverageResult.txt
 	echo "Run successful! Results in $outfile"
 else
 	echo "Error: size of input is too large. Max number of sequences is $seqMax" > $outfile
 	echo "Error: size of input is too large. Max number of sequences is $seqMax"
 fi
 
-
+rm coverageResult.txt
+rm *.faaTEMPP
+rm coverage.txt
+rm temp.txt
 
