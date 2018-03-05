@@ -5,7 +5,6 @@
 databaseName=pVOGDB/pVOGDataBase/AllvogHMMprofiles
 inFile=$1
 delimiter=,
-rm coverageResult.txt
 echo "#Query Name,Target,Coverage" >> coverageResult.txt
 while read line
 do

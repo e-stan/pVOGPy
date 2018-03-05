@@ -5,10 +5,13 @@ Created on Fri Feb 23 17:30:57 2018
 @author: stancliffe
 """
 
+import sys
+bitthresh = sys.argv[3]
+covThresh = sys.argv[4] 
 def goodHit(sample):
     newSample = sample
     for y in sample:
-        if not(y[1][1] >= 60 or y[1][-1] >= 60):
+        if not(y[1][1] >= bitthresh or y[1][-1] >= covThresh):
             newSample.remove(y)
     return newSample
 

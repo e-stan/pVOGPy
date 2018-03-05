@@ -7,6 +7,7 @@ databaseName=pVOGDB/pVOGDataBase
 queryName=$1
 ethresh=10e-7
 bitThresh=30
+covThresh=0
 seqMax=1000
 delimiter=,
 
@@ -22,7 +23,7 @@ then
 	python trainingOutputFilter.py $outfile $bitThresh $delimiter
 	rm junk.txt
 	./hmmAlign.sh coverage.txt
-	python filteredResultCoverageMerger.py $outfile coverageResult.txt
+	python filteredResultCoverageMerger.py $outfile coverageResult.txt $bitThresh $covThresh
 	echo "Run successful! Results in $outfile"
 else
 	echo "Error: size of input is too large. Max number of sequences is $seqMax" > $outfile
