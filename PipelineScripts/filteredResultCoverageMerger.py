@@ -52,6 +52,7 @@ for x in coverageData[1:]:
     for y in originalData[temp[0]]:
         if y[0] == temp[1]:
             y[1].append(temp[2])
+            y[1].append(temp[3])
           
 file1.close()
 
@@ -68,7 +69,7 @@ for x in tempData:
 
 file1.write("#Query Name")
 for x in range(maxHits):
-    file1.write(delimiter+"Target "+str(x+1)+delimiter+"evalue "+str(x+1)+delimiter+"bitscore "+str(x+1)+delimiter+"bias"+str(x+1)+delimiter+"coverage"+str(x+1))
+    file1.write(delimiter+"Target "+str(x+1)+delimiter+"evalue "+str(x+1)+delimiter+"bitscore "+str(x+1)+delimiter+"bias"+str(x+1)+delimiter+"QueryCoverage"+str(x+1)+delimiter+"TargetCoverage"+str(x+1))
 for x in originalData:
     file1.write("\n"+x)
     for y in originalData[x]:

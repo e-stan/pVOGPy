@@ -11,7 +11,10 @@ do
 	arr=( ${line//,/ })
 	/local/vol00/shared/bin/hmmalign -o temp.txt pVOGDB/AllvogHMMprofiles/${arr[1]}.hmm ${arr[0]}.faaTEMPP
 	python testAlignmentProcessor.py temp.txt
-	echo "${arr[0]}$delimiter${arr[1]}$delimiter$?" >> coverageResult.txt
+	queryCov=$?
+	python targetCoverageCalculator.py temp.txt
+	targetCov=$?
+	echo "${arr[0]}$delimiter${arr[1]}$delimiter$queryCov$delimiter$targetCov" >> coverageResult.txt
 done < $inFile
 
 
