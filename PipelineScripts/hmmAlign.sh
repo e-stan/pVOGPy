@@ -10,7 +10,7 @@ while read line
 do
 	arr=( ${line//,/ })
 	/local/vol00/shared/bin/hmmalign -o temp.txt pVOGDB/AllvogHMMprofiles/${arr[1]}.hmm ${arr[0]}.faaTEMPP
-	python testAlignmentProcessor.py temp.txt
+	python queryCoverageCalculator.py temp.txt
 	queryCov=$?
 	python targetCoverageCalculator.py temp.txt
 	targetCov=$?

@@ -7,11 +7,13 @@ Created on Fri Feb 23 17:30:57 2018
 
 import sys
 bitthresh = sys.argv[3]
-covThresh = sys.argv[4] 
+covThresh = sys.argv[4]
+covThreshTarget = sys.argv[5]
 def goodHit(sample):
-    newSample = sample
+    newSample = list(sample)
+
     for y in sample:
-        if not(y[1][1] >= bitthresh or y[1][-1] >= covThresh):
+        if not((float((y[1][1])) >= bitthresh and float(y[1][-2]) > 30 and float(y[1][-1]) > 30) or float(y[1][-2]) >= covThresh or float(y[1][-1]) >= covThreshTarget):
             newSample.remove(y)
     return newSample
 
@@ -35,7 +37,7 @@ originalData = dict()
 
 for x in dataOriginal[1:]:
     temp = x.split(delimiter)
-    numHits = (len(temp)-1)/4
+    numHits = (len(temp)-1)/6
     originalData[temp[0]] = []
     for x in range(numHits):
         originalData[temp[0]].append([temp[1+(x*4)],temp[(2+(x*4)):(5+(x*4))]])
