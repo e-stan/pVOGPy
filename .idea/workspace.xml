@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="345af1ac-6d21-47fb-ae32-753629bdf388" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/fastaConverter.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/pVOGProteinsExtraction.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/splitter.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/AllFamilyProteinList.tsv" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/AnalysisSingleCSV-DESKTOP-90MVB8R.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/AnalysisSingleCSV.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/TCAnalysisPlotter.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.spyproject/workspace.ini" afterPath="$PROJECT_DIR$/.spyproject/workspace.ini" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py" afterPath="$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh" afterPath="$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/splitter.py" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/splitter.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,41 +21,43 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="pVOGProteinsExtraction.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/pVOGProteinsExtraction.py">
+      <file leaf-file-name="TrustedCuttoffs.dat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/TrustedCuttoffs.dat">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+            <state relative-caret-position="0">
+              <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="splitter.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/splitter.py">
+      <file leaf-file-name="TCAnalysisPlotter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/TCAnalysisPlotter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+            <state relative-caret-position="459">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnalysisSingleCSV-DESKTOP-90MVB8R.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/AnalysisSingleCSV-DESKTOP-90MVB8R.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1000">
+              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fastaConverter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/fastaConverter.py">
+      <file leaf-file-name="AnalysisSingleCSV.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/AnalysisSingleCSV.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AllFamilyProteinList.tsv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/AllFamilyProteinList.tsv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7600">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="720">
+              <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -97,19 +101,24 @@
         <option value="$PROJECT_DIR$/../../Senior Design/ResistancePowerCalc.py" />
         <option value="$PROJECT_DIR$/PipelineScripts/targetCoverageCalculator.py" />
         <option value="$PROJECT_DIR$/PipelineScripts/hmmAlign.sh" />
-        <option value="$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh" />
         <option value="$PROJECT_DIR$/PipelineScripts/pVOGTrainingPipelinewCov.sh" />
-        <option value="$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py" />
         <option value="$PROJECT_DIR$/TrustedCutoffAnalysis/allGenomeFastaSplit.py" />
         <option value="$PROJECT_DIR$/TrustedCutoffAnalysis/fastaConverter.py" />
         <option value="$PROJECT_DIR$/TrustedCutoffAnalysis/pVOGProteinsExtraction.py" />
+        <option value="$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh" />
+        <option value="$PROJECT_DIR$/PipelineScripts/fastaSplit.py" />
+        <option value="$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py" />
+        <option value="$PROJECT_DIR$/TrustedCutoffAnalysis/TrustedCuttoffs.dat" />
+        <option value="$PROJECT_DIR$/TrustedCutoffAnalysis/AnalysisSingleCSV.py" />
+        <option value="$PROJECT_DIR$/TrustedCutoffAnalysis/TCAnalysisPlotter.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-14" />
-    <option name="width" value="1948" />
-    <option name="height" value="2074" />
+    <option name="x" value="-4816" />
+    <option name="y" value="637" />
+    <option name="width" value="4832" />
+    <option name="height" value="2632" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -127,6 +136,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -167,10 +177,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pVOGPy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pVOGPy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParameterTesting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pVOGPy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pVOGPy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="outDatedScripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -196,43 +233,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.pVOGProteinsExtraction">
-    <configuration default="false" name="ResistancePowerCalc" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Senior Design" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pVOGPy" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Senior Design/ResistancePowerCalc.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="targetCoverageCalculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PipelineScripts" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pVOGPy" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PipelineScripts/targetCoverageCalculator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.TCAnalysisPlotter">
     <configuration default="false" name="pVOGProteinsExtraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -282,6 +283,42 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pVOGPy" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrustedCutoffAnalysis/fastaConverter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="AnalysisSingleCSV" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TrustedCutoffAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pVOGPy" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrustedCutoffAnalysis/AnalysisSingleCSV.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TCAnalysisPlotter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TrustedCutoffAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pVOGPy" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrustedCutoffAnalysis/TCAnalysisPlotter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -385,19 +422,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.ResistancePowerCalc" />
-      <item index="1" class="java.lang.String" itemvalue="Python.targetCoverageCalculator" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pVOGProteinsExtraction" />
-      <item index="3" class="java.lang.String" itemvalue="Python.allGenomeFastaSplit" />
-      <item index="4" class="java.lang.String" itemvalue="Python.fastaConverter" />
+      <item index="0" class="java.lang.String" itemvalue="Python.pVOGProteinsExtraction" />
+      <item index="1" class="java.lang.String" itemvalue="Python.allGenomeFastaSplit" />
+      <item index="2" class="java.lang.String" itemvalue="Python.fastaConverter" />
+      <item index="3" class="java.lang.String" itemvalue="Python.AnalysisSingleCSV" />
+      <item index="4" class="java.lang.String" itemvalue="Python.TCAnalysisPlotter" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.pVOGProteinsExtraction" />
-        <item index="1" class="java.lang.String" itemvalue="Python.fastaConverter" />
-        <item index="2" class="java.lang.String" itemvalue="Python.allGenomeFastaSplit" />
-        <item index="3" class="java.lang.String" itemvalue="Python.targetCoverageCalculator" />
-        <item index="4" class="java.lang.String" itemvalue="Python.ResistancePowerCalc" />
+        <item index="0" class="java.lang.String" itemvalue="Python.TCAnalysisPlotter" />
+        <item index="1" class="java.lang.String" itemvalue="Python.AnalysisSingleCSV" />
+        <item index="2" class="java.lang.String" itemvalue="Python.pVOGProteinsExtraction" />
+        <item index="3" class="java.lang.String" itemvalue="Python.fastaConverter" />
+        <item index="4" class="java.lang.String" itemvalue="Python.allGenomeFastaSplit" />
       </list>
     </recent_temporary>
   </component>
@@ -440,19 +477,26 @@
       <option name="project" value="LOCAL" />
       <updated>1522149438974</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="started trusted cutoff analysis, script necessarily files">
+      <created>1522191827532</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1522191827532</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-14" y="0" width="1948" height="2074" extended-state="0" />
+    <frame x="-4816" y="637" width="4832" height="2632" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28183717" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.165625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15726681" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973558" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32803944" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32802013" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -495,34 +539,14 @@
     <MESSAGE value="updated pipeline and filters to take into account and threshhold with a combination of coverage and bitscore BS &gt; 60 OR COV &gt; 60" />
     <MESSAGE value="updated pipeline, now calculates the target coverage as well, length of match state / length of alignment" />
     <MESSAGE value="updated coverage merger" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated coverage merger" />
+    <MESSAGE value="started trusted cutoff analysis, script necessarily files" />
+    <option name="LAST_COMMIT_MESSAGE" value="started trusted cutoff analysis, script necessarily files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../Senior Design/SeniorDesign.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1720">
-          <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testAlignmentProcessor.py" />
-    <entry file="file://$PROJECT_DIR$/hpqpbitScoreProcessorEVal.py" />
-    <entry file="file://$PROJECT_DIR$/outputFilter4Pipeline.py" />
-    <entry file="file://$PROJECT_DIR$/pVOGPipeline.sh" />
-    <entry file="file://$PROJECT_DIR$/hpqpBitScoreProcessorBitScore.py" />
-    <entry file="file://$PROJECT_DIR$/hpqpbitScoreProcessorEVal.py" />
-    <entry file="file://$PROJECT_DIR$/outputFilter4Pipeline.py" />
     <entry file="file://$PROJECT_DIR$/pVOGPipeline.sh" />
     <entry file="file://$PROJECT_DIR$/hpqpBitScoreProcessorBitScore.py" />
     <entry file="file://$PROJECT_DIR$/hpqpbitScoreProcessorEVal.py" />
@@ -581,7 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -589,7 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -597,7 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1400">
           <caret line="35" column="15" lean-forward="false" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -605,7 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -613,15 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -629,22 +640,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="760">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="15" column="125" lean-forward="false" selection-start-line="15" selection-start-column="125" selection-end-line="15" selection-end-column="125" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/AllFamilyProteinList.tsv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7600">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/splitter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -652,23 +662,107 @@
     <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/fastaConverter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/pVOGProteinsExtraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        <state relative-caret-position="720">
+          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/splitter.py">
+    <entry file="file://$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        <state relative-caret-position="1560">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PipelineScripts/fastaSplit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParameterTesting/HPQSingleCSV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParameterTesting/HPQBitScore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ParameterTesting/ClassifierAnalysisScript.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outDatedScripts/hpqpbitScoreProcessor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#165#183#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/TrustedCuttoffs.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/AnalysisSingleCSV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="66" column="29" lean-forward="false" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/TCAnalysisPlotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/AnalysisSingleCSV-DESKTOP-90MVB8R.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
         </state>
       </provider>

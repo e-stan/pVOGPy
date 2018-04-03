@@ -12,9 +12,9 @@ covThreshTarget = sys.argv[5]
 def goodHit(sample):
     newSample = list(sample)
 
-    for y in sample:
-        if not((float((y[1][1])) >= bitthresh and float(y[1][-2]) > 30 and float(y[1][-1]) > 30) or float(y[1][-2]) >= covThresh or float(y[1][-1]) >= covThreshTarget):
-            newSample.remove(y)
+    #for y in sample:
+        #if not((float((y[1][1])) >= bitthresh and float(y[1][-2]) >= covThresh/2. and float(y[1][-1]) >=covThreshTarget/2.) or float(y[1][-2]) >= covThresh or float(y[1][-1]) >= covThreshTarget):
+            #newSample.remove(y)
     return newSample
 
 import sys
@@ -37,7 +37,7 @@ originalData = dict()
 
 for x in dataOriginal[1:]:
     temp = x.split(delimiter)
-    numHits = (len(temp)-1)/6
+    numHits = (len(temp)-1)/4
     originalData[temp[0]] = []
     for x in range(numHits):
         originalData[temp[0]].append([temp[1+(x*4)],temp[(2+(x*4)):(5+(x*4))]])

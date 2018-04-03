@@ -5,12 +5,12 @@
 outfile="$1.csv"
 databaseName=pVOGDB/pVOGDataBase
 queryName=$1
-ethresh=10e-10
-bitThresh=30
-bitThresh2=100
-covThresh=60
-tarcovThresh=50
-seqMax=1000
+ethresh=10
+bitThresh=0
+bitThresh2=0
+covThresh=0
+tarcovThresh=0
+seqMax=1001
 delimiter=,
 
 seqs=$(cat $1 | grep -c ">")
