@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="345af1ac-6d21-47fb-ae32-753629bdf388" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/all_ProteinResultsCSVs.tar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/AllFamilyProteinList.tsv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/allIDs.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -516,7 +517,21 @@
       <option name="project" value="LOCAL" />
       <updated>1522813855059</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added csv files">
+      <created>1522813986137</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1522813986137</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added ,dat files">
+      <created>1522814289058</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1522814289058</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -572,7 +587,9 @@
     <MESSAGE value="updated coverage merger" />
     <MESSAGE value="started trusted cutoff analysis, script necessarily files" />
     <MESSAGE value="found trusted cutoffs and made plotting scripts for basic analysis" />
-    <option name="LAST_COMMIT_MESSAGE" value="found trusted cutoffs and made plotting scripts for basic analysis" />
+    <MESSAGE value="added csv files" />
+    <MESSAGE value="added ,dat files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ,dat files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
