@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="345af1ac-6d21-47fb-ae32-753629bdf388" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/pVOGPy.iml" afterPath="$PROJECT_DIR$/.idea/pVOGPy.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysis.py" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysis.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +13,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/pVOGPy2$ROCAnalysis.coverage" NAME="ROCAnalysis Coverage Results" MODIFIED="1522814253631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TrustedCutoffAnalysis" />
+    <SUITE FILE_PATH="coverage/pVOGPy2$pVOGProteinsExtraction.coverage" NAME="pVOGProteinsExtraction Coverage Results" MODIFIED="1522814585582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TrustedCutoffAnalysis" />
+    <SUITE FILE_PATH="coverage/pVOGPy2$ROCAnalysis.coverage" NAME="ROCAnalysis Coverage Results" MODIFIED="1522814605724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TrustedCutoffAnalysis" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
@@ -43,11 +43,21 @@
       <file leaf-file-name="ROCAnalysis.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+            <state relative-caret-position="950">
+              <caret line="132" column="14" lean-forward="true" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pVOGProteinsExtraction.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/pVOGProteinsExtraction.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -391,10 +401,10 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.ROCAnalysis" />
-        <item index="1" class="java.lang.String" itemvalue="Python.AnalysisSingleCSV" />
-        <item index="2" class="java.lang.String" itemvalue="Python.TCAnalysisPlotter" />
-        <item index="3" class="java.lang.String" itemvalue="Python.AnalysisSingleCSV-DESKTOP-90MVB8R" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pVOGProteinsExtraction" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pVOGProteinsExtraction" />
+        <item index="2" class="java.lang.String" itemvalue="Python.AnalysisSingleCSV" />
+        <item index="3" class="java.lang.String" itemvalue="Python.TCAnalysisPlotter" />
+        <item index="4" class="java.lang.String" itemvalue="Python.AnalysisSingleCSV-DESKTOP-90MVB8R" />
       </list>
     </recent_temporary>
   </component>
@@ -461,7 +471,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522813855059</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="updated">
+      <created>1522814308728</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1522814308728</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -469,9 +486,9 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3277311" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3277311" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1565126" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3277311" sideWeight="0.5083333" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3277311" sideWeight="0.49166667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1565126" sideWeight="0.49166667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973558" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -533,7 +550,8 @@
     <MESSAGE value="updated coverage merger" />
     <MESSAGE value="started trusted cutoff analysis, script necessarily files" />
     <MESSAGE value="found trusted cutoffs and made plotting scripts for basic analysis" />
-    <option name="LAST_COMMIT_MESSAGE" value="found trusted cutoffs and made plotting scripts for basic analysis" />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -630,13 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/pVOGProteinsExtraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1560">
@@ -711,10 +722,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/pVOGProteinsExtraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="38" column="14" lean-forward="true" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+        <state relative-caret-position="950">
+          <caret line="132" column="14" lean-forward="true" selection-start-line="132" selection-start-column="14" selection-end-line="132" selection-end-column="14" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

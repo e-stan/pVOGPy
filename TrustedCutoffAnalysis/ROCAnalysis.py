@@ -1,5 +1,7 @@
 import pickle
 import numpy
+import matplotlib
+
 
 filename = "_allFastaFiles.faa.csv"#"partialFasta.faa.csv"
 numFiles = 297
@@ -55,9 +57,11 @@ for x in splitData:
     VOG2FoundProtein[x[1]].append([x[0]]+x[2:])
 
 queryCutoffs = range(100)
-targetCutoffs = range(100)
+targetCutoffs = [66]#range(100)
 distances = []
 params =[]
+TPRs = []
+FPRs = []
 
 for QC in queryCutoffs:
     for TC in targetCutoffs:
@@ -88,6 +92,8 @@ for QC in queryCutoffs:
         TPR = truePosFound/float(truePosFound+truePosLost)
         FPR = 1-(FalsePosFound/float(FalsePosLost+FalsePosFound))
         distances.append(numpy.sqrt((TPR-1)**2 + FPR**2))
+        TPRs.append(TPR)
+        FPRs.append(FPR)
         params.append([QC,TC])
 
 print min(distances)
@@ -98,6 +104,8 @@ truePosFound = 0
 truePosLost = 0
 FalsePosFound = 0
 FalsePosLost = 0
+
+
 
 for x in VOG2FoundProtein:
     for y in VOG2FoundProtein[x]:
@@ -118,4 +126,13 @@ distances.append(numpy.sqrt((TPR - 1) ** 2 + FPR ** 2))
 params.append([QC, TC])
 
 print distances[-1]
+
+
+###Final Output
+
+0.269950914817
+# [QC,TC] =
+# [81, 66]
+# Using Trusted Cutoffs:
+# 0.473138361281
 
