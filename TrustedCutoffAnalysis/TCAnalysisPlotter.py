@@ -17,8 +17,8 @@ for x in data:
         cutoffs[temp[0]] = [float(y) for y in temp[1:]]
     else:
         error+=1
-
 nums = range(len(cutoffs))
+print min([len(cutoffs[x]) for x in cutoffs])
 TC = [cutoffs[x][0] for x in cutoffs]
 NC = [cutoffs[x][1] for x in cutoffs]
 TCNC = [[cutoffs[x][0],cutoffs[x][1]] for x in cutoffs]

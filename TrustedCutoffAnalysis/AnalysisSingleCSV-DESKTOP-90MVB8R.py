@@ -18,7 +18,7 @@ for filenum in [y+1 for y in range(numFiles)]:
         temp = x.split(delimiter)
         protein = temp[0]
         temp=temp[1:]
-        numHits = len(temp)/6
+        numHits = 1#len(temp)/6
        # print x
         for x in range(numHits):
             newData = [protein]+temp[x*6:x*6+6]
@@ -34,8 +34,8 @@ file = open("VOG2Protein.pickle",'rb')
 VOG2Protein = pickle.load(file)
 
 file.close()
-
-file = open('TrustedCuttoffs.dat','w')
+#file = open('TrustedCuttoffs.dat','w')
+file = open('TrustedCuttoffsBestHit.dat','w')
 
 VOG2FoundProtein = dict(VOG2Protein)
 
