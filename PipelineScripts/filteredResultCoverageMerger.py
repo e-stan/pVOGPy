@@ -1,20 +1,31 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Feb 23 17:30:57 2018
 
-@author: stancliffe
 """
 
 import sys
-bitthresh = sys.argv[3]
-covThresh = sys.argv[4]
-covThreshTarget = sys.argv[5]
+covThresh = sys.argv[3]
+covThreshTarget = sys.argv[4]
+
+file = open('TrustedCuttoffs.dat','r')
+TC = file.readlines()
+file.close()
+
+cutoff = dict()
+for x in TC:
+    temp = [y.rstrip() for y in x.split(",")]
+    if temp[1] == 'NA':
+        cutoff[temp[0]] = float("inf")
+    else:
+        cutoff[temp[0]] = float(temp[1])
+
+
 def goodHit(sample):
     newSample = list(sample)
 
-    #for y in sample:
-        #if not((float((y[1][1])) >= bitthresh and float(y[1][-2]) >= covThresh/2. and float(y[1][-1]) >=covThreshTarget/2.) or float(y[1][-2]) >= covThresh or float(y[1][-1]) >= covThreshTarget):
-            #newSample.remove(y)
+    for y in sample:
+        if float(y[1][1]) < cutoff[y[0]] and (float(y[1][3]) < covThresh or float(y[1][4]) < covThreshTarget):
+            newSample.remove(y)
     return newSample
 
 import sys
@@ -79,6 +90,7 @@ for x in originalData:
         for z in y[1]:
             temp+=(delimiter+z)
         file1.write(delimiter+y[0]+temp)
+file1.write("\nCORRECT")
 file1.close()
 
 

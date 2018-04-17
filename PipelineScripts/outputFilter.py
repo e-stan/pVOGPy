@@ -1,29 +1,15 @@
-# -*- coding: utf-8 -*-
+
 """
-Created on Wed Feb 21 15:36:40 2018
+Filters tabular output of hmmscan, placing data into a dimliited file with each row as a query protein and each column
+representing the best matches of that query protein to a target pVOG along with the respective evalue, bitscore, and bias.
 
 @author: stancliffe
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Feb 07 11:57:23 2018
-
-@author: stancliffe
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jan 31 11:09:38 2018
-Filters tabular output of hmmscan, for bit value of the target profile
-
-@author: stancliffe
-"""
 import sys
 
 inputfile = sys.argv[1]
-bitThresh = float(sys.argv[2])
-delimiter = sys.argv[3]
+delimiter = sys.argv[2]
 
 
 file = open(inputfile,'r')
@@ -40,11 +26,11 @@ for x in arrayData:
 filteredData = dict()
 
 for x in arrayData:
-    if x[5] >= bitThresh:   #if evalue is less than threshold
-        if x[2] in filteredData:
-            filteredData[x[2]].append([x[0],x[4:]])
-        else:
-            filteredData[x[2]] = [[x[0],x[4:]]]
+   # if x[5] >= bitThresh:   #if evalue is less than threshold
+    if x[2] in filteredData:
+        filteredData[x[2]].append([x[0],x[4:]])
+    else:
+        filteredData[x[2]] = [[x[0],x[4:]]]
 
 
 maxHits = 0
@@ -71,13 +57,14 @@ for x in filteredData: #output filtered data
     for y in filteredData[x]:
         outFile2.write(x)
         outFile2.write(delimiter+y[0])
-        #if j+1 < len(filteredData):
         outFile2.write('\n')
     j+=1
-    
 
+outFile2.write("\nCORRECT")
+outFile.write("\nCORRECT")
 outFile.close()
 outFile2.close()
+
 
 
 

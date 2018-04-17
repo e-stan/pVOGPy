@@ -1,6 +1,7 @@
-import sys
+"""Script to separate an input fasta file into individual files for each sequence in the file. The new files will contain the same sequence as in the original
+but the data line will contain the sequence length (i.e. ><seqLength>) for use in calculating coverages. Run with python fastaSplit.py <inputFile> """
 
-#blastdbcmdmore
+import sys
 
 filename = sys.argv[1]
 
@@ -18,11 +19,11 @@ for x in data:
             outFile.close()
             outFile = open(temp+".faaTEMPP",'w')
             sequence = ""
-            for r in seqData: sequence += r 
+            for r in seqData: sequence += r
             length = len(sequence)
             outFile.write('>'+str(length)+'\n')
             for r in seqData:
-                outFile.write(r)        
+                outFile.write(r)
             outFile.close()
         temp = x.split()
         temp = temp[0][1:]
@@ -36,9 +37,10 @@ seqData = outFile.readlines()
 outFile.close()
 outFile = open(temp+".faaTEMPP",'w')
 sequence = ""
-for r in seqData: sequence += r 
+for r in seqData: sequence += r
 length = len(sequence)
 outFile.write('>'+str(length)+'\n')
 for r in seqData:
-    outFile.write(r)        
+    outFile.write(r)
 outFile.close()
+exit(77)

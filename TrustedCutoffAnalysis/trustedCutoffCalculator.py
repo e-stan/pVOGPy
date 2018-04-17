@@ -18,7 +18,7 @@ for filenum in [y+1 for y in range(numFiles)]:
         temp = x.split(delimiter)
         protein = temp[0]
         temp=temp[1:]
-        numHits = 1#len(temp)/6
+        numHits = len(temp)/6
        # print x
         for x in range(numHits):
             newData = [protein]+temp[x*6:x*6+6]
@@ -35,7 +35,7 @@ VOG2Protein = pickle.load(file)
 
 file.close()
 
-file = open('TrustedCuttoffsBestHit.dat','w')
+file = open('TrustedCuttoffs.dat','w')
 
 VOG2FoundProtein = dict(VOG2Protein)
 
@@ -45,7 +45,7 @@ for x in VOG2FoundProtein:
 for x in splitData:
     VOG2FoundProtein[x[1]].append([x[0]]+x[2:])
 
-
+#print VOG2FoundProtein["VOG0006"]
 for x in VOG2FoundProtein:
     VOG2FoundProtein[x].sort(key = lambda x: x[2],reverse = True)
     #print VOG2FoundProtein[x]
