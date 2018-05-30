@@ -4,8 +4,11 @@
 """
 
 import sys
-covThresh = sys.argv[3]
-covThreshTarget = sys.argv[4]
+covThresh = float(sys.argv[3])
+covThreshTarget = float(sys.argv[4])
+bitThresh = float(sys.argv[5])
+ethresh = float(sys.argv[6])
+reportingCode = int(sys.argv[7])
 
 file = open('TrustedCuttoffs.dat','r')
 TC = file.readlines()
@@ -22,10 +25,14 @@ for x in TC:
 
 def goodHit(sample):
     newSample = list(sample)
-
-    for y in sample:
-        if float(y[1][1]) < cutoff[y[0]] and (float(y[1][3]) < covThresh or float(y[1][4]) < covThreshTarget):
-            newSample.remove(y)
+    if reportingCode == 1:
+        for y in sample:
+            if float(y[1][1]) < cutoff[y[0]]:
+                newSample.remove(y)
+    else:
+        for y in sample:
+            if float(y[1][1]) < bitThresh or float(y[1][3]) < covThresh or float(y[1][4]) < covThreshTarget or float(y[1][0]) > ethresh:
+                newSample.remove(y)
     return newSample
 
 import sys

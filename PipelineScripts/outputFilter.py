@@ -1,15 +1,15 @@
 
 """
-Filters tabular output of hmmscan, placing data into a dimliited file with each row as a query protein and each column
+Filters tabular output of hmmscan, placing data into a delimited file with each row as a query protein and each column
 representing the best matches of that query protein to a target pVOG along with the respective evalue, bitscore, and bias.
 
-@author: stancliffe
 """
 
 import sys
 
 inputfile = sys.argv[1]
 delimiter = sys.argv[2]
+UUID = sys.argv[3]
 
 
 file = open(inputfile,'r')
@@ -41,7 +41,7 @@ for x in filteredData:
 file.close()
 
 outFile = open(inputfile,'w')
-outFile2 = open('coverage.txt','w')
+outFile2 = open('coverage.txt'+UUID,'w')
 j=0
 
 outFile.write("#Query Name")

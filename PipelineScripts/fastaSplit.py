@@ -4,20 +4,22 @@ but the data line will contain the sequence length (i.e. ><seqLength>) for use i
 import sys
 
 filename = sys.argv[1]
+UUID = sys.argv[2]
 
 file = open(filename,'r')
 
 data = file.readlines()
-
+seqIDtoAccession = dict()
+id = 1111
 first = 0
 for x in data:
     if x.startswith('>'):
         if not first == 0:
             outFile.close()
-            outFile = open(temp+".faaTEMPP",'r')
+            outFile = open(temp+".faaTEMPP"+UUID,'r')
             seqData = outFile.readlines()
             outFile.close()
-            outFile = open(temp+".faaTEMPP",'w')
+            outFile = open(temp+".faaTEMPP"+UUID,'w')
             sequence = ""
             for r in seqData: sequence += r
             length = len(sequence)
@@ -27,20 +29,29 @@ for x in data:
             outFile.close()
         temp = x.split()
         temp = temp[0][1:]
-        outFile = open(temp+".faaTEMPP",'w')
+        seqIDtoAccession[temp] = id
+        temp = str(id)
+        id+=1
+        outFile = open(temp+".faaTEMPP"+UUID,'w')
         first+=1
     else:
         outFile.write(x)
 outFile.close()
-outFile = open(temp+".faaTEMPP",'r')
+outFile = open(temp+".faaTEMPP"+UUID,'r')
 seqData = outFile.readlines()
 outFile.close()
-outFile = open(temp+".faaTEMPP",'w')
+outFile = open(temp+".faaTEMPP"+UUID,'w')
 sequence = ""
 for r in seqData: sequence += r
 length = len(sequence)
 outFile.write('>'+str(length)+'\n')
 for r in seqData:
     outFile.write(r)
+outFile.close()
+
+outFile = open("access2id.txt"+UUID,'w')
+
+for x in seqIDtoAccession:
+    outFile.write(x +" " +str(seqIDtoAccession[x])+"\n")
 outFile.close()
 exit(77)

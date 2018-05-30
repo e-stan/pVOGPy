@@ -3,12 +3,13 @@
 import pickle
 
 filename = "_allFastaFiles.faa.csv"#"partialFasta.faa.csv"
+filepath =""
 numFiles = 297
 splitData = []
 
 for filenum in [y+1 for y in range(numFiles)]:
 
-    file = open(str(filenum)+filename,'r')
+    file = open(filepath+str(filenum)+filename,'r')
 
     data = file.readlines()
 
@@ -26,9 +27,9 @@ for filenum in [y+1 for y in range(numFiles)]:
             splitData.append(newData)
     file.close
 
-file = open("protein2VOG.pickle",'rb')
-protein2VOG = pickle.load(file)
-file.close()
+# file = open("protein2VOG.pickle",'rb')
+# protein2VOG = pickle.load(file)
+# file.close()
 
 file = open("VOG2Protein.pickle",'rb')
 VOG2Protein = pickle.load(file)
@@ -41,10 +42,11 @@ VOG2FoundProtein = dict(VOG2Protein)
 
 for x in VOG2FoundProtein:
     VOG2FoundProtein[x] = []
-
+print len(splitData)
 for x in splitData:
     VOG2FoundProtein[x[1]].append([x[0]]+x[2:])
-
+noFPcount = 0
+firstFPCount = 0
 #print VOG2FoundProtein["VOG0006"]
 for x in VOG2FoundProtein:
     VOG2FoundProtein[x].sort(key = lambda x: x[2],reverse = True)
@@ -58,58 +60,29 @@ for x in VOG2FoundProtein:
             if y == VOG2FoundProtein[x][0]:
                 file.write(delimiter+"NA")
                 file.write(delimiter+str(y[2]))
+                firstFPCount += 1
             else:
                 file.write(delimiter+str(VOG2FoundProtein[x][VOG2FoundProtein[x].index(y)-1][2]))
                 file.write(delimiter+str(y[2]))
            # print x + "First = " + delimiter+str(y[2])
             break
         if y == VOG2FoundProtein[x][-1]:
-            file.write(delimiter+str(y[2]))
-            file.write(delimiter + "1.0")
+            if y[2] < 50:
+                file.write(delimiter+str(y[2]))
+                file.write(delimiter + str(y[2]/2))
+            else:
+                file.write(delimiter+str(50))
+                file.write(delimiter + str(50/2))
+            noFPcount += 1
     if len(VOG2FoundProtein[x]) == 0:
         file.write(delimiter + "NA")
         file.write(delimiter + "NA")
-   #  VOG2FoundProtein[x].sort(key=lambda x: x[2],reverse = False)
-   # # print VOG2FoundProtein[x]
-   #
-   #  for y in VOG2FoundProtein[x]:
-   #     # print y
-   #      if (y[0] in VOG2Protein[x]):
-   #          if not y == VOG2FoundProtein[x][0]:
-   #              file.write(delimiter + str(VOG2FoundProtein[x][VOG2FoundProtein[x].index(y)-1][2]))
-   #          else:
-   #              file.write(delimiter+"NA")
-   #          break
-   #      if y == VOG2FoundProtein[x][-1]:
-   #          file.write(delimiter+"NA")
-   #  VOG2FoundProtein[x].sort(key=lambda x: x[2], reverse=True)
-   #  # print VOG2FoundProtein[x]
-   #  file.write(x)
-   #  for y in VOG2FoundProtein[x]:
-   #      # print y
-   #      # print y[0]
-   #      # print VOG2Protein[x][0]
-   #      if not (y[0] in VOG2Protein[x]):
-   #          if y == VOG2FoundProtein[x][0]:
-   #              file.write(delimiter + "NA")
-   #          else:
-   #              file.write(delimiter + str(VOG2FoundProtein[x][VOG2FoundProtein[x].index(y) - 1][2]))
-   #              # print x + "First = " + delimiter+str(y[2])
-   #          break
-   #      if y == VOG2FoundProtein[x][-1]:
-   #          file.write(delimiter + str(y[2]))
-   #  VOG2FoundProtein[x].sort(key=lambda x: x[2], reverse=False)
-   #  # print VOG2FoundProtein[x]
-   #
-   #  for y in VOG2FoundProtein[x]:
-   #      # print y
-   #      if (y[0] in VOG2Protein[x]):
-   #          if not y == VOG2FoundProtein[x][0]:
-   #              file.write(delimiter + str(VOG2FoundProtein[x][VOG2FoundProtein[x].index(y) - 1][2]))
-   #          else:
-   #              file.write(delimiter + "NA")
-   #          break
-   #      if y == VOG2FoundProtein[x][-1]:
-   #          file.write(delimiter + "NA")
 
     file.write("\n")
+    
+    
+print noFPcount
+print firstFPCount
+file.close()
+# -*- coding: utf-8 -*-
+
