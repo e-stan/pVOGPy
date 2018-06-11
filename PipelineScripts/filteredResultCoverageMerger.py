@@ -90,13 +90,16 @@ for x in tempData:
 file1.write("#Query Name")
 for x in range(maxHits):
     file1.write(delimiter+"Target "+str(x+1)+delimiter+"evalue "+str(x+1)+delimiter+"bitscore "+str(x+1)+delimiter+"bias"+str(x+1)+delimiter+"QueryCoverage"+str(x+1)+delimiter+"TargetCoverage"+str(x+1))
+i = 0
 for x in originalData:
     file1.write("\n"+x)
     for y in originalData[x]:
-        temp = ""
-        for z in y[1]:
-            temp+=(delimiter+z)
-        file1.write(delimiter+y[0]+temp)
+        if i < 2:
+            temp = ""
+            for z in y[1]:
+                temp+=(delimiter+z)
+            file1.write(delimiter+y[0]+temp)
+        i+=1
 file1.write("\nCORRECT")
 file1.close()
 

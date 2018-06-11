@@ -1,32 +1,17 @@
 import pickle
-import numpy
-import matplotlib.pyplot as plt
-
-
-import pickle
 
 filename = "_allFastaFiles.faa.csv"#"partialFasta.faa.csv"
-filepath ="enhancedpVOGAllSeqResults/"
-file = open('TrustedCuttoffsEnhancedBestHit.dat','r')
-TC = file.readlines()
-file.close()
+filepath =""#""enhancedpVOGAllSeqResults/"
 delimiter = ","
 
 cutoff = dict()
 min = 100000
 count = 0
-for x in TC:
-    temp = [y.rstrip() for y in x.split(delimiter)]
-    if temp[1] == 'NA':
-        cutoff[temp[0]] = float("inf")
-        count += 1
-    else:
-        cutoff[temp[0]] = float(temp[1])
-        if float(temp[1]) < min:
-            min = float(temp[1])
+
 
 numFiles = 30
 splitData = []
+errorCount = 0
 for filenum in [y+1 for y in range(numFiles)]:
 
     file = open(filepath+str(filenum)+filename,'r')
@@ -39,15 +24,17 @@ for filenum in [y+1 for y in range(numFiles)]:
         temp = x.split(delimiter)
         protein = temp[0]
         temp=temp[1:]
-        numHits = 1#len(temp)/6
-       # print x
-        for x in range(numHits):
-            newData = [protein]+temp[x*6:x*6+6]
-            newData = newData[:2] + [float(z) for z in newData[2:]]
-            splitData.append(newData)
-            if (len(newData) != 7):splitData.remove(newData)
+        numHits = len(temp)/6
+        try:
+            for x in range(numHits):
+                newData = [protein]+temp[x*6:x*6+6]
+                newData = newData[:2] + [float(z) for z in newData[2:]]
+                splitData.append(newData)
+                if (len(newData) != 7):splitData.remove(newData)
+        except:
+            errorCount+=1
     file.close
-
+print errorCount
 
 file = open("VOG2ProteinEnhanced.pickle",'rb')
 VOG2Protein = pickle.load(file)
@@ -60,13 +47,16 @@ VOG2FoundProtein = dict(VOG2Protein)
 for x in VOG2FoundProtein:
     VOG2FoundProtein[x] = []
 print len(splitData)
+
+
 for x in splitData:
     VOG2FoundProtein[x[1]].append([x[0]]+x[2:])
     
-    
-queryCutoffs = [x*3+37 for x in range(21)]
-targetCutoffs = [x*3+37 for x in range(21)]
-BSCutoffs = [x*4+30 for x in range(15)]
+import sys
+
+queryCutoffs = [x for x in range(100)]
+targetCutoffs = [x for x in range(100)]
+BSCutoffs = [x+float(sys.argv[1]) for x in range(20)]
 
 distances = []
 params =[]
@@ -98,45 +88,41 @@ for QC in queryCutoffs:
 
              TPR = truePosFound/float(truePosFound+truePosLost)
              FPR = 1-(FalsePosFound/float(FalsePosLost+FalsePosFound))
-             distances.append(numpy.sqrt((TPR-1)**2 + FPR**2))
+             distances.append(((TPR-1)**2 + FPR**2)**.5)
              TPRs.append(TPR)
              FPRs.append(FPR)
              params.append([QC,TC,BS])
 
-
-
-file = open("FlatThresholdBestHitAnalysisResults.txt",'w')
+file = open("FlatThresholdAnalysisResults"+sys.argv[1]+"_"+str(int(sys.argv[1])+19)+".txt",'w')
 file.write("TPR,FPR,Query Coverage,Target Coverage,Bitscore\n")
 for TPR,FPR,param in zip(TPRs,FPRs,params):
     file.write(str(TPR)+delimiter+str(FPR))
     [file.write(delimiter+str(x) ) for x in param]
     file.write("\n")
 file.close()
-print FPRs
-minFPR = 1;
-maxTPR = 0;
-for x in range(len(FPRs)):
-    if FPRs[x]  <= minFPR:
-        minFPR = FPRs[x]
-        
-for x in range(len(FPRs)):
-    if TPRs[x] > maxTPR and abs(FPRs[x]-minFPR) < 1e-6:
-        maxTPR = TPRs[x]
-        paramOptimal = params[x]
 
-
-print minFPR
-print maxTPR
-print paramOptimal   
-
-        
-       
-# RESULT 5/25/18
+# #print FPRs
+# minFPR = 1
+# maxTPR = 0
+# for x in range(len(FPRs)):
+#     if FPRs[x]  <= minFPR:
+#         minFPR = FPRs[x]
 #
-# 0.00882584712372
-# 0.106190776307
-# [97, 97, 30]
+# for x in range(len(FPRs)):
+#     if TPRs[x] > maxTPR and abs(FPRs[x]-minFPR) < 1e-6:
+#         maxTPR = TPRs[x]
+#         paramOptimal = params[x]
 
+
+# print minFPR
+# print maxTPR
+# print paramOptimal
+
+# RESULT 5/25/2018
+#
+# 0.00242688846069
+# 0.103504412647
+# [97, 97, 30]
    
 #plt.plot([x[0] for x in params],distances)
 #plt.xlabel('Query Coverage Threshold')
@@ -160,6 +146,4 @@ print paramOptimal
 #FPRs = []
 
 
-
-# -*- coding: utf-8 -*-
 

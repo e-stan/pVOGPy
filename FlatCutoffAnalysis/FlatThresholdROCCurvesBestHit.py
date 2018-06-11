@@ -14,23 +14,12 @@ import pickle
 
 filename = "_allFastaFiles.faa.csv"#"partialFasta.faa.csv"
 filepath ="enhancedpVOGAllSeqResults/"
-file = open('TrustedCuttoffsEnhancedBestHit.dat','r')
-TC = file.readlines()
-file.close()
 delimiter = ","
 
 cutoff = dict()
 min = 100000
 count = 0
-for x in TC:
-    temp = [y.rstrip() for y in x.split(delimiter)]
-    if temp[1] == 'NA':
-        cutoff[temp[0]] = float("inf")
-        count += 1
-    else:
-        cutoff[temp[0]] = float(temp[1])
-        if float(temp[1]) < min:
-            min = float(temp[1])
+
 
 numFiles = 30
 splitData = []
@@ -73,8 +62,8 @@ for x in splitData:
     
 queryCutoffs = [x for x in range(100)]
 targetCutoffs = [x for x in range(100)]
-BSCutoffs = [x for x in range(100)]
-evCutoffs = [(10**-50)*10**x for x in range(50)]
+BSCutoffs = [x for x in range(200)]
+evCutoffs = [(10**-75)*10**x for x in range(75)]
 
 
 distances = []
@@ -216,12 +205,22 @@ plt.legend(["Target Coverage","Bitscore","Query Coverage"])
 
 file.close()
 
-file = open("FlatThresholdBestHitAnalysisResults.txt",'r')
-data = file.readlines()
-data = data[1:]
 
-data = [[float(y) for y in x.split(",")] for x in data]
-data = [x + [((x[0]-1)**2 + x[1]**2)**.5] for x in data]
+fileEndings = [str(20*x)+"_"+str(20*x+19) for x in range(10)]
+totalData = []
+for x in fileEndings:
+
+    file = open("./FlatThresholdResults/FlatThresholdAnalysisResultsBesstHit"+ x +".txt",'r')
+    data = file.readlines()
+    data = data[1:]
+
+    data = [[float(y) for y in x.split(",")] for x in data]
+    data = [x + [((x[0]-1)**2 + x[1]**2)**.5] for x in data]
+    file.close()
+    totalData += data
+data = totalData
+
+
 min = data[0][-1]
 for x in data:
     if x[-1] < min:
@@ -235,7 +234,7 @@ print optimal
 FPRs = [x[1] for x in data]
 TPRs = [x[0] for x in data]
 
-plt.scatter(FPRs,TPRs,marker='+',linewidths=.002,c='m')
+plt.scatter(FPRs,TPRs,marker='+',linewidths=.002,c='.60')
 plt.xlabel('FPR')
 plt.ylabel('TPR')
 plt.title("ROC Curve: Best Hit")
