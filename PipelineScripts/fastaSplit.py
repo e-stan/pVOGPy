@@ -9,7 +9,7 @@ UUID = sys.argv[2]
 file = open(filename,'r')
 
 data = file.readlines()
-seqIDtoAccession = dict()
+accession2SeqID = dict()
 id = 1111
 first = 0
 for x in data:
@@ -29,7 +29,7 @@ for x in data:
             outFile.close()
         temp = x.split()
         temp = temp[0][1:]
-        seqIDtoAccession[temp] = id
+        accession2SeqID[temp] = id
         temp = str(id)
         id+=1
         outFile = open(temp+".faaTEMPP"+UUID,'w')
@@ -43,7 +43,8 @@ outFile.close()
 outFile = open(temp+".faaTEMPP"+UUID,'w')
 sequence = ""
 for r in seqData: sequence += r
-length = len(sequence)
+i = len(sequence)
+length = i
 outFile.write('>'+str(length)+'\n')
 for r in seqData:
     outFile.write(r)
@@ -51,7 +52,7 @@ outFile.close()
 
 outFile = open("access2id.txt"+UUID,'w')
 
-for x in seqIDtoAccession:
-    outFile.write(x +" " +str(seqIDtoAccession[x])+"\n")
+for x in accession2SeqID:
+    outFile.write(x +" " + str(accession2SeqID[x]) + "\n")
 outFile.close()
 exit(77)

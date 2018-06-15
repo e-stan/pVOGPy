@@ -52,7 +52,7 @@ then
                 ./hmmAlign.sh coverage.txt$UUID $UUID
                 if [ $? -eq 0 ] #check that coverages were calculated
                 then
-                    python filteredResultCoverageMerger.py $outfile coverageResult.txt$UUID $queryCovThresh $tarCovThresh $bitThresh $ethresh $2
+                    python filteredResultCoverageMerger.py $outfile coverageResult.txt$UUID $queryCovThresh $tarCovThresh $bitThresh $ethresh $2 $UUID
                     if [ "$(tail -n 1 $outfile)" = "CORRECT" ] #check that the python script ran until completion
                     then
                         echo "Run successful! Results in $outfile"
