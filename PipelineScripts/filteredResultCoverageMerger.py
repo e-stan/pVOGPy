@@ -5,8 +5,9 @@
 
 import sys
 import pickle
-covThresh = float(sys.argv[3])
-covThreshTarget = float(sys.argv[4])
+import math
+covThresh = int(sys.argv[3])
+covThreshTarget = int(sys.argv[4])
 bitThresh = float(sys.argv[5])
 ethresh = float(sys.argv[6])
 reportingCode = int(sys.argv[7])
@@ -38,8 +39,8 @@ def goodHit(sample):
     return newSample
 
 def eVal2Bit(eval):
-    return eval*10+3 #TODO replace with actual formula
-import sys
+    if eval > 1e-70 and eval < 1.3e-7:return -1.408*math.log(eval)+8.0871
+    if eval < 1e-70: return 235.0
 
 inputCSV = sys.argv[1]
 inputCoverage = sys.argv[2]
@@ -93,10 +94,7 @@ for x in coverageData[1:]:
         if y[0] == temp[1]:
             y[1].append(temp[2])
             y[1].append(temp[3])
-          
-file1.close()
 
-file1 = open(inputCSV,'w')
 tempData = dict(originalData)
 originalData = dict()
 maxHits = 0
@@ -123,7 +121,10 @@ for x in originalData:
         i+=1
 
 file2 = open("access2id.txt"+UUID,'r')
-accessions = [x.split()[0] for x in file.readlines]
+accessions = []
+for x in file2.readlines():
+    temp = x.split()
+    accessions.append(temp[0])
 for x in accessions:
     if not x in originalData:
      file1.write("\n"+x+delimiter+"NO REPORTABLE HITS FOUND")

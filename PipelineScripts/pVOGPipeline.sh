@@ -53,10 +53,9 @@ then
                 if [ $? -eq 0 ] #check that coverages were calculated
                 then
                     python filteredResultCoverageMerger.py $outfile coverageResult.txt$UUID $queryCovThresh $tarCovThresh $bitThresh $ethresh $2 $UUID
-                    if [ "$(tail -n 1 $outfile)" = "CORRECT" ] #check that the python script ran until completion
+                    if [ "$(tail -n 1 $outfile)" = "#End of Report" ] #check that the python script ran until completion
                     then
                         echo "Run successful! Results in $outfile"
-                        sed -i '$ d' $outfile #remove last line of file
                     else
                         rm $outfile
                         echo "Error in performing final post processing" > $outfile
