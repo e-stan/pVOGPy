@@ -26,7 +26,6 @@ for x in arrayData:
 filteredData = dict()
 
 for x in arrayData:
-   # if x[5] >= bitThresh:   #if evalue is less than threshold
     if x[2] in filteredData:
         filteredData[x[2]].append([x[0],x[4:]])
     else:

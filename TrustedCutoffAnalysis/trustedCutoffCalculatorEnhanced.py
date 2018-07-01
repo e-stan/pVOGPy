@@ -19,7 +19,9 @@ for filenum in [y+1 for y in range(numFiles)]:
         temp = x.split(delimiter)
         protein = temp[0]
         temp=temp[1:]
-        numHits = 1#len(temp)/6
+        numHits = 2
+        realNum = len(temp)/6
+        if realNum < numHits: numHits = realNum
        # print x
         for x in range(numHits):
             newData = [protein]+temp[x*6:x*6+6]

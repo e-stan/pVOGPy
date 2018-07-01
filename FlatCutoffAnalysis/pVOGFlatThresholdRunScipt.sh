@@ -1,11 +1,6 @@
 #!/bin/bash
 
-for ((i=0; i<200; i+=20));
+for ((i=0; i<200; i+=10));
 do
-	python ROCFlatCutoffEnhanced.py $i &
-done
-
-for ((i=0; i<200; i+=20));
-do
-	python ROCFlatCutoffEnhancedBestHit.py $i &
+	python ROCFlatCutoffEnhancedTopTwo.py $i &
 done
