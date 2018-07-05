@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="401a7383-bacf-47f4-b62d-85fdf707d559" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/TrustedCuttoffsFinal.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PipelineScripts/FlatThresholdFTPRData.pickle" afterPath="$PROJECT_DIR$/PipelineScripts/FlatThresholdFTPRData.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdFPRTPRPredictionCalculator.py" afterPath="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdFPRTPRPredictionCalculator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdROCCurves.py" afterPath="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdROCCurves.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PipelineScripts/TrustedCuttoffs.dat" afterPath="$PROJECT_DIR$/PipelineScripts/TrustedCuttoffs.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py" afterPath="$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh" afterPath="$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisEnhanced.py" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisEnhanced.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculatorEnhanced.py" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculatorEnhanced.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -103,10 +94,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-16" />
-    <option name="y" value="-16" />
-    <option name="width" value="3872" />
-    <option name="height" value="2092" />
+    <option name="x" value="-18" />
+    <option name="y" value="-18" />
+    <option name="width" value="3873" />
+    <option name="height" value="2093" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -141,6 +132,10 @@
       <pane id="Scratches" />
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Ethan Stancliffe\OneDrive - University of Iowa\pVOGFiles\pVOGPy\PipelineScripts" />
@@ -167,25 +162,8 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.ROCAnalysisEnhanced">
-    <configuration default="false" name="trustedCutoffCalculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TrustedCutoffAnalysis" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
+    <configuration name="FlatThresholdFPRTPRPredictionCalculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="pVOGPy" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="FlatThresholdROCCurves" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -196,50 +174,34 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pVOGPy" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdROCCurves.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="FlatThresholdFPRTPRPredictionCalculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FlatCutoffAnalysis" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pVOGPy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdFPRTPRPredictionCalculator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <method />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration default="false" name="trustedCutoffCalculatorEnhanced" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="FlatThresholdROCCurves" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pVOGPy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TrustedCutoffAnalysis" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FlatCutoffAnalysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pVOGPy" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculatorEnhanced.py" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdROCCurves.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <method />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration default="false" name="ROCAnalysisEnhanced" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ROCAnalysisEnhanced" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pVOGPy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -250,12 +212,50 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pVOGPy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisEnhanced.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
-      <method />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="trustedCutoffCalculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pVOGPy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TrustedCutoffAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="trustedCutoffCalculatorEnhanced" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="pVOGPy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TrustedCutoffAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculatorEnhanced.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration default="true" type="#PerlConfigurationType" factoryName="Perl" show_console_on_std_err="false" show_console_on_std_out="false">
       <option name="alternativeSdkPath" />
@@ -289,90 +289,37 @@
       <option name="initCode" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pVOGPy" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pVOGPy" />
-      <method />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pVOGPy" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="py.test">
+      <module name="pVOGPy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pVOGPy" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.trustedCutoffCalculator" />
-      <item index="1" class="java.lang.String" itemvalue="Python.FlatThresholdROCCurves" />
-      <item index="2" class="java.lang.String" itemvalue="Python.FlatThresholdFPRTPRPredictionCalculator" />
-      <item index="3" class="java.lang.String" itemvalue="Python.trustedCutoffCalculatorEnhanced" />
-      <item index="4" class="java.lang.String" itemvalue="Python.ROCAnalysisEnhanced" />
+    <list>
+      <item itemvalue="Python.trustedCutoffCalculator" />
+      <item itemvalue="Python.FlatThresholdROCCurves" />
+      <item itemvalue="Python.FlatThresholdFPRTPRPredictionCalculator" />
+      <item itemvalue="Python.trustedCutoffCalculatorEnhanced" />
+      <item itemvalue="Python.ROCAnalysisEnhanced" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ROCAnalysisEnhanced" />
-        <item index="1" class="java.lang.String" itemvalue="Python.trustedCutoffCalculatorEnhanced" />
-        <item index="2" class="java.lang.String" itemvalue="Python.FlatThresholdROCCurves" />
-        <item index="3" class="java.lang.String" itemvalue="Python.FlatThresholdFPRTPRPredictionCalculator" />
-        <item index="4" class="java.lang.String" itemvalue="Python.trustedCutoffCalculator" />
+      <list>
+        <item itemvalue="Python.ROCAnalysisEnhanced" />
+        <item itemvalue="Python.trustedCutoffCalculatorEnhanced" />
+        <item itemvalue="Python.FlatThresholdROCCurves" />
+        <item itemvalue="Python.FlatThresholdFPRTPRPredictionCalculator" />
+        <item itemvalue="Python.trustedCutoffCalculator" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -420,12 +367,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530417326639</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="minor edits.">
+      <created>1530815354184</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1530815354184</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -476,7 +429,8 @@
     <MESSAGE value="made pipeline alteratiions to only incude first two hits. Add NA to all queries with no significant hits. Also, to add estimated TPR and FPR to the top of hte output file. Still need to add the evalue-&gt;bitscore equaiton and test new features." />
     <MESSAGE value="tested and debugged pipeline. Changes all seem accurate." />
     <MESSAGE value="updated trusted cutoffs and flat cutoffs to reflect top two hits" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated trusted cutoffs and flat cutoffs to reflect top two hits" />
+    <MESSAGE value="minor edits." />
+    <option name="LAST_COMMIT_MESSAGE" value="minor edits." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -794,6 +748,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
