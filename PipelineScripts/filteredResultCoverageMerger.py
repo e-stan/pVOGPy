@@ -34,7 +34,7 @@ def goodHit(sample):
         for y in sample:
             if float(y[1][1]) < cutoff[y[0]]:
                 newSample.remove(y)
-    if reportingCode == 3: #CUSTOM CUTOFFS (strictly greater than is used in the filter)
+    if reportingCode == 2: #CUSTOM CUTOFFS (strictly greater than is used in the filter)
         for y in sample:
             if float(y[1][1]) <= bitThresh or float(y[1][3]) <= covThresh or float(y[1][4]) <= covThreshTarget or float(y[1][0]) >= ethresh:
                 newSample.remove(y)
@@ -81,9 +81,9 @@ file1 = open(inputCSV,'w')
 
 #Calcualte and report FPR and TPR
 if reportingCode == 1:
-    file1.write("#BEGIN REPORT:\tPredicted False Positive Rate: 0.0\tPredicted True Positive Rate: .7845\n")
+    file1.write("#BEGIN REPORT:\n#Predicted False Positive Rate: 0.0"+delimiter+"Predicted True Positive Rate: 0.75078\n")
 if reportingCode == 3:
-    file1.write("#BEGIN REPORT:\tPredicted False Positive Rate: 1.00\tPredicted True Positive Rate: 1.00\n")
+    file1.write("#BEGIN REPORT:\n#Predicted False Positive Rate: 1.00"+delimiter+"Predicted True Positive Rate: 1.00\n")
 else:
     file3 = open('FlatThresholdFTPRData.pickle','rb')
     readInData = pickle.load(file3) #load precomputed reuslts
@@ -92,9 +92,9 @@ else:
     if eVal2Bit(ethresh) > bitThresh: tempBit = int(eVal2Bit(ethresh))
     try:
         [TPR,FPR] = readInData[covThresh][covThreshTarget][tempBit] #calculate if within range
-        file1.write("#BEGIN REPORT:\tPredicted False Positive Rate: "+str(FPR)+"\tPredicted True Positive Rate: " + str(TPR)+"\n")
+        file1.write("#BEGIN REPORT:\n#Predicted False Positive Rate: "+str(FPR)+delimiter+"Predicted True Positive Rate: " + str(TPR)+"\n")
     except: #write error if the cutoffs are not within range
-        file1.write("#BEGIN REPORT:\tFalse Postive and True Positive Rates cannot be predicted due to choice of cutoffs. See HHpVOG help.\n")
+        file1.write("#BEGIN REPORT:\n#False Postive and True Positive Rates cannot be predicted due to choice of cutoffs. See HHpVOG help.\n")
 
 #pair up hmmscan results with coverages
 for x in coverageData[1:]:
@@ -117,7 +117,7 @@ for x in tempData:
 
 #output results
 file1.write("#Query Name")
-for x in range(maxHits):
+for x in range(2):
     file1.write(delimiter+"Target "+str(x+1)+delimiter+"evalue "+str(x+1)+delimiter+"bitscore "+str(x+1)+delimiter+"bias"+str(x+1)+delimiter+"QueryCoverage"+str(x+1)+delimiter+"TargetCoverage"+str(x+1))
 
 for x in originalData:

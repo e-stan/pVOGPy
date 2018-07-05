@@ -38,7 +38,7 @@ VOG2Protein = pickle.load(file)
 
 file.close()
 
-file = open('TrustedCuttoffsBestHit.dat','w')
+file = open('TrustedCuttoffsFinal.dat','w')
 
 VOG2FoundProtein = dict(VOG2Protein)
 

@@ -3,7 +3,7 @@
 import pickle
 import numpy
 
-file = open('TrustedCuttoffsEnhanced.dat','r')
+file = open('TrustedCuttoffsFinal.dat','r')
 TC = file.readlines()
 file.close()
 delimiter = ","

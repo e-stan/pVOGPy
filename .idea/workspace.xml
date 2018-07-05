@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="401a7383-bacf-47f4-b62d-85fdf707d559" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pVOGOptimizedAICutoffs/VOG2ProteinEnhanced.pickle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisEnhanced.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/FlatCutoffAnalysis/ROCFlatCutoffEnhancedBestHit.py" afterPath="$PROJECT_DIR$/FlatCutoffAnalysis/ROCFlatCutoffEnhancedTopTwo.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/TrustedCuttoffsFinal.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PipelineScripts/FlatThresholdFTPRData.pickle" afterPath="$PROJECT_DIR$/PipelineScripts/FlatThresholdFTPRData.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FlatCutoffAnalysis/pVOGFlatThresholdRunScipt.sh" afterPath="$PROJECT_DIR$/FlatCutoffAnalysis/pVOGFlatThresholdRunScipt.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdFPRTPRPredictionCalculator.py" afterPath="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdFPRTPRPredictionCalculator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdROCCurves.py" afterPath="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdROCCurves.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PipelineScripts/TrustedCuttoffs.dat" afterPath="$PROJECT_DIR$/PipelineScripts/TrustedCuttoffs.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py" afterPath="$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PipelineScripts/outputFilter.py" afterPath="$PROJECT_DIR$/PipelineScripts/outputFilter.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisTC.py" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisTC.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/TrustedCuttoffs.dat" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/TrustedCuttoffs.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/TrustedCuttoffsBestHit.dat" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/TrustedCuttoffsBestHit.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculator.py" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh" afterPath="$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisEnhanced.py" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisEnhanced.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculatorEnhanced.py" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculatorEnhanced.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,81 +23,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="trustedCutoffCalculatorEnhanced.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculatorEnhanced.py">
+      <file leaf-file-name="pVOGPipeline.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="47" />
+            <state relative-caret-position="680">
+              <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ROCAnalysisTC.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisTC.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ROCAnalysisEnhanced.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisEnhanced.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2920">
-              <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TCAnalysisPlotter.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/TCAnalysisPlotter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1760">
-              <caret line="86" column="45" lean-forward="true" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trustedCutoffCalculator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1000">
-              <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filteredResultCoverageMerger.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="filteredResultCoverageMerger.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+            <state relative-caret-position="3640">
+              <caret line="93" column="67" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ROCFlatCutoffEnhancedTopTwo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FlatCutoffAnalysis/ROCFlatCutoffEnhancedTopTwo.py">
+      <file leaf-file-name="hmmAlign.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PipelineScripts/hmmAlign.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pVOGFlatThresholdRunScipt.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FlatCutoffAnalysis/pVOGFlatThresholdRunScipt.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+            <state relative-caret-position="640">
+              <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -138,19 +86,19 @@
         <option value="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdROCCurvesBestHit.py" />
         <option value="$PROJECT_DIR$/PipelineScripts/fastaSplit.py" />
         <option value="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdResults/FlatThresholdFPRTPRPredictionCalculator.py" />
-        <option value="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdFPRTPRPredictionCalculator.py" />
-        <option value="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdROCCurves.py" />
-        <option value="$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh" />
-        <option value="$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py" />
         <option value="$PROJECT_DIR$/PipelineScripts/outputFilter.py" />
         <option value="$PROJECT_DIR$/pVOGOptimizedAICutoffs/TestFile.py" />
         <option value="$PROJECT_DIR$/FlatCutoffAnalysis/ROCFlatCutoffEnhancedBestHit.py" />
         <option value="$PROJECT_DIR$/FlatCutoffAnalysis/pVOGFlatThresholdRunScipt.sh" />
         <option value="$PROJECT_DIR$/FlatCutoffAnalysis/ROCFlatCutoffEnhancedTopTwo.py" />
-        <option value="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculatorEnhanced.py" />
         <option value="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisTC.py" />
-        <option value="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisEnhanced.py" />
         <option value="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculator.py" />
+        <option value="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdFPRTPRPredictionCalculator.py" />
+        <option value="$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh" />
+        <option value="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdROCCurves.py" />
+        <option value="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculatorEnhanced.py" />
+        <option value="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisEnhanced.py" />
+        <option value="$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py" />
       </list>
     </option>
   </component>
@@ -175,8 +123,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,34 +135,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pVOGPy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pVOGPy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PipelineScripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Ethan Stancliffe\OneDrive - University of Iowa\pVOGFiles\pVOGPy\pVOGOptimizedAICutoffs" />
-      <recent name="C:\Users\Ethan Stancliffe\OneDrive - University of Iowa\pVOGFiles\pVOGPy\PipelineScripts" />
-      <recent name="C:\Users\Ethan Stancliffe\OneDrive - University of Iowa\pVOGFiles\pVOGPy\FlatCutoffAnalysis" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ethan Stancliffe\OneDrive - University of Iowa\pVOGFiles\pVOGPy\PipelineScripts" />
       <recent name="C:\Users\Ethan Stancliffe\OneDrive - University of Iowa\pVOGFiles\pVOGPy\FlatCutoffAnalysis" />
       <recent name="C:\Users\Ethan Stancliffe\OneDrive - University of Iowa\pVOGFiles\pVOGPy\TrustedCutoffAnalysis" />
       <recent name="C:\Users\Ethan Stancliffe\OneDrive - University of Iowa\pVOGFiles\pVOGPy\profileEnhancedpVOGs" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ethan Stancliffe\OneDrive - University of Iowa\pVOGFiles\pVOGPy\PipelineScripts" />
+      <recent name="C:\Users\Ethan Stancliffe\OneDrive - University of Iowa\pVOGFiles\pVOGPy\pVOGOptimizedAICutoffs" />
+      <recent name="C:\Users\Ethan Stancliffe\OneDrive - University of Iowa\pVOGFiles\pVOGPy\FlatCutoffAnalysis" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -231,7 +166,61 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.trustedCutoffCalculator">
+  <component name="RunManager" selected="Python.ROCAnalysisEnhanced">
+    <configuration default="false" name="trustedCutoffCalculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TrustedCutoffAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pVOGPy" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FlatThresholdROCCurves" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FlatCutoffAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pVOGPy" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdROCCurves.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="FlatThresholdFPRTPRPredictionCalculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FlatCutoffAnalysis" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="pVOGPy" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdFPRTPRPredictionCalculator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="trustedCutoffCalculatorEnhanced" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -250,24 +239,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="ROCAnalysisTC" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TrustedCutoffAnalysis" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pVOGPy" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisTC.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="ROCAnalysisEnhanced" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -281,42 +252,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pVOGPy" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisEnhanced.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="TCAnalysisPlotter" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TrustedCutoffAnalysis" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pVOGPy" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrustedCutoffAnalysis/TCAnalysisPlotter.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="trustedCutoffCalculator" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TrustedCutoffAnalysis" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="pVOGPy" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -420,19 +355,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.trustedCutoffCalculatorEnhanced" />
-      <item index="1" class="java.lang.String" itemvalue="Python.ROCAnalysisTC" />
-      <item index="2" class="java.lang.String" itemvalue="Python.ROCAnalysisEnhanced" />
-      <item index="3" class="java.lang.String" itemvalue="Python.TCAnalysisPlotter" />
-      <item index="4" class="java.lang.String" itemvalue="Python.trustedCutoffCalculator" />
+      <item index="0" class="java.lang.String" itemvalue="Python.trustedCutoffCalculator" />
+      <item index="1" class="java.lang.String" itemvalue="Python.FlatThresholdROCCurves" />
+      <item index="2" class="java.lang.String" itemvalue="Python.FlatThresholdFPRTPRPredictionCalculator" />
+      <item index="3" class="java.lang.String" itemvalue="Python.trustedCutoffCalculatorEnhanced" />
+      <item index="4" class="java.lang.String" itemvalue="Python.ROCAnalysisEnhanced" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.trustedCutoffCalculator" />
-        <item index="1" class="java.lang.String" itemvalue="Python.TCAnalysisPlotter" />
-        <item index="2" class="java.lang.String" itemvalue="Python.ROCAnalysisEnhanced" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ROCAnalysisTC" />
-        <item index="4" class="java.lang.String" itemvalue="Python.trustedCutoffCalculatorEnhanced" />
+        <item index="0" class="java.lang.String" itemvalue="Python.ROCAnalysisEnhanced" />
+        <item index="1" class="java.lang.String" itemvalue="Python.trustedCutoffCalculatorEnhanced" />
+        <item index="2" class="java.lang.String" itemvalue="Python.FlatThresholdROCCurves" />
+        <item index="3" class="java.lang.String" itemvalue="Python.FlatThresholdFPRTPRPredictionCalculator" />
+        <item index="4" class="java.lang.String" itemvalue="Python.trustedCutoffCalculator" />
       </list>
     </recent_temporary>
   </component>
@@ -478,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1529124680667</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updated trusted cutoffs and flat cutoffs to reflect top two hits">
+      <created>1530417326639</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1530417326639</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -488,13 +430,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31344903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31344903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -513,15 +455,15 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.414859" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31344903" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967462" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -533,7 +475,8 @@
     <MESSAGE value="got back flat cuotff results. Updated Analysis script" />
     <MESSAGE value="made pipeline alteratiions to only incude first two hits. Add NA to all queries with no significant hits. Also, to add estimated TPR and FPR to the top of hte output file. Still need to add the evalue-&gt;bitscore equaiton and test new features." />
     <MESSAGE value="tested and debugged pipeline. Changes all seem accurate." />
-    <option name="LAST_COMMIT_MESSAGE" value="tested and debugged pipeline. Changes all seem accurate." />
+    <MESSAGE value="updated trusted cutoffs and flat cutoffs to reflect top two hits" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated trusted cutoffs and flat cutoffs to reflect top two hits" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -542,13 +485,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PipelineScripts/fastaSplit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2320">
-          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdROCCurves.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9680">
@@ -677,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PipelineScripts/TrustedCuttoffs.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisMultiCutoff.py" />
     <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/MultiCutoffCalculator.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -762,13 +691,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdFPRTPRPredictionCalculator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="28" column="46" lean-forward="false" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdResults/FlatThresholdAnalysisResults0_19.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -776,24 +698,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdROCCurves.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2461">
-          <caret line="225" column="6" lean-forward="true" selection-start-line="225" selection-start-column="6" selection-end-line="225" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PipelineScripts/fastaSplit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2320">
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PipelineScripts/hmmAlign.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -818,29 +726,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1651">
-          <caret line="57" column="66" lean-forward="false" selection-start-line="57" selection-start-column="66" selection-end-line="57" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pVOGOptimizedAICutoffs/TestFile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-          <folding>
-            <element signature="e#24#47#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FlatCutoffAnalysis/pVOGFlatThresholdRunScipt.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-          <folding />
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -848,23 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4040">
           <caret line="101" column="12" lean-forward="false" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FlatCutoffAnalysis/ROCFlatCutoffEnhancedTopTwo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculatorEnhanced.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -872,38 +751,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisEnhanced.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2920">
-          <caret line="74" column="9" lean-forward="true" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/TCAnalysisPlotter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1760">
-          <caret line="86" column="45" lean-forward="true" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
-          <folding />
+          <caret line="86" column="45" lean-forward="false" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
-          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+          <caret line="28" column="14" lean-forward="false" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlatCutoffAnalysis/ROCFlatCutoffEnhancedTopTwo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PipelineScripts/pVOGPipeline.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PipelineScripts/TrustedCuttoffs.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculatorEnhanced.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisEnhanced.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdROCCurves.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1803">
+          <caret line="237" column="17" lean-forward="true" selection-start-line="237" selection-start-column="17" selection-end-line="237" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdResults/FlatThresholdAnalysisResults180_199.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="7" column="38" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlatCutoffAnalysis/FlatThresholdFPRTPRPredictionCalculator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="42" column="48" lean-forward="true" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/PipelineScripts/filteredResultCoverageMerger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        <state relative-caret-position="3640">
+          <caret line="93" column="67" lean-forward="false" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PipelineScripts/hmmAlign.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding />
         </state>
       </provider>

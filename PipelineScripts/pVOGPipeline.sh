@@ -2,7 +2,7 @@
 #Bash script that takes an input fasta file of viral protein sequences and searches the query sequences against a database of pVOG profiles. 
 #After the search, hits are reported with target profiles. If reporting code = 1, then only hits above the trusted cutoff are reported. If the
 #reporting code = 2, then custom query and target coverages are used. For reporting code =3, then no filtering is applied.
-#to run: ./pVOGPipeline <inputFile> <reportingCode>
+#to run: ./pVOGPipeline <inputFile> <reportingCode> <queryCoverage> <targetCoverage> <bit-score> <evalue>
 
 
 #generate UUID

@@ -35,8 +35,9 @@ for filenum in [y+1 for y in range(numFiles)]:
         temp = x.split(delimiter)
         protein = temp[0]
         temp=temp[1:]
-        numHits = len(temp)/6
-       # print x
+        numHits = 2
+        realNum = len(temp) / 6
+        if realNum < numHits: numHits = realNum
         for x in range(numHits):
             newData = [protein]+temp[x*6:x*6+6]
             newData = newData[:2] + [float(z) for z in newData[2:]]
@@ -60,8 +61,8 @@ for x in splitData:
     VOG2FoundProtein[x[1]].append([x[0]]+x[2:])
     
     
-queryCutoffs = [x for x in range(1)]
-targetCutoffs = [x for x in range(1)]
+queryCutoffs = [x for x in range(100)]
+targetCutoffs = [x for x in range(100)]
 BSCutoffs = [x for x in range(400)]
 #evCutoffs = [(10**-50)*10**x for x in range(50)]
 evCutoffs = [(10**-70)*10**x for x in numpy.linspace(0,71,100)]
@@ -205,11 +206,11 @@ plt.legend(["Target Coverage","Bitscore","Query Coverage"])
 file.close()
 
 
-fileEndings = [str(20*x)+"_"+str(20*x+19) for x in range(10)]
+fileEndings = [str(10*x)+"_"+str(10*x+9) for x in range(20)]
 totalData = []
 for x in fileEndings:
 
-    file = open("./FlatThresholdResults/FlatThresholdAnalysisResults"+ x +".txt",'r')
+    file = open("./FlatThresholdResults/FlatThresholdAnalysisResultsTopTwo"+ x +".txt",'r')
     data = file.readlines()
     data = data[1:]
 
@@ -233,10 +234,10 @@ print optimal
 FPRs = [x[1] for x in data]
 TPRs = [x[0] for x in data]
 
-#plt.scatter(FPRs,TPRs,marker='+',linewidths=.002,c='.60')
+plt.scatter(FPRs,TPRs,marker='+',linewidths=.002,c='.60')
 plt.xlabel('FPR')
 plt.ylabel('TPR')
-plt.title("ROC Curve: All Hits")
+plt.title("ROC Curve")
 plt.legend(["Target Coverage","Evalue","Bitscore","Query Coverage","Combined Thresholding"])
 
 
