@@ -1,29 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="401a7383-bacf-47f4-b62d-85fdf707d559" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Accession.dat" beforeDir="false" afterPath="$PROJECT_DIR$/pVOGHouseKeepingScripts/Accession.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LabLog.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RandomAccessionSelector.py" beforeDir="false" afterPath="$PROJECT_DIR$/pVOGHouseKeepingScripts/RandomAccessionSelector.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/AllFamilyProteinList.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/pVOGHouseKeepingScripts/AllFamilyProteinList.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/AllSeqPipelineRunScript.sh" beforeDir="false" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/VOGAllSeqResults/AllSeqPipelineRunScript.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/AnalysisSingleCSV-DESKTOP-90MVB8R.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/EnhancedPVogs.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/MultiCutoffCalculator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/ProfileEnhancedpVOGGenerator.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/ROCAnalysisRemovedDuplicates.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/TCAnalysisPlotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/TCAnalysisPlotter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/TrustedCutoffsRemoveDuplicate.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/allIDs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pVOGHouseKeepingScripts/allIDs.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/fastaConverter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pVOGHouseKeepingScripts/fastaConverter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/pVOGProteinsExtraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/pVOGHouseKeepingScripts/pVOGProteinsExtraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/splitter.py" beforeDir="false" afterPath="$PROJECT_DIR$/pVOGHouseKeepingScripts/splitter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/TrustedCutoffAnalysis/trustedCutoffCalculator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pVOGFiles - Shortcut.lnk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/proteinAccessionExtractor.py" beforeDir="false" afterPath="$PROJECT_DIR$/pVOGHouseKeepingScripts/proteinAccessionExtractor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/randomAccessions.dat" beforeDir="false" afterPath="$PROJECT_DIR$/pVOGHouseKeepingScripts/randomAccessions.dat" afterDir="false" />
-    </list>
+    <list default="true" id="401a7383-bacf-47f4-b62d-85fdf707d559" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,8 +66,8 @@
       <file leaf-file-name="splitter.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pVOGHouseKeepingScripts/splitter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+            <state relative-caret-position="323">
+              <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -171,10 +149,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="253" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-15" />
+    <option name="y" value="-15" />
+    <option name="width" value="3873" />
+    <option name="height" value="2093" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -188,6 +166,11 @@
             <path>
               <item name="pVOGPy" type="b2602c69:ProjectViewProjectNode" />
               <item name="pVOGPy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pVOGPy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pVOGPy" type="462c0819:PsiDirectoryNode" />
+              <item name="pVOGHouseKeepingScripts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -445,12 +428,18 @@
       <option name="project" value="LOCAL" />
       <updated>1530816145628</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="updated TC analysis plots. Cleaned up directories">
+      <created>1531139821128</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1531139821128</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="253" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -459,11 +448,11 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.175" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21860768" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32943678" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.3078125" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.42699724" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.3845153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39967462" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -509,7 +498,8 @@
     <MESSAGE value="tested and debugged pipeline. Changes all seem accurate." />
     <MESSAGE value="updated trusted cutoffs and flat cutoffs to reflect top two hits" />
     <MESSAGE value="minor edits." />
-    <option name="LAST_COMMIT_MESSAGE" value="minor edits." />
+    <MESSAGE value="updated TC analysis plots. Cleaned up directories" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated TC analysis plots. Cleaned up directories" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -776,8 +766,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pVOGHouseKeepingScripts/splitter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="323">
+          <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
         </state>
       </provider>
     </entry>
