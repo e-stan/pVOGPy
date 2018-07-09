@@ -3,7 +3,7 @@
 import pickle
 
 filename = "_allFastaFiles.faa.csv"#"partialFasta.faa.csv"
-filepath =""
+filepath ="VOGAllSeqResults/"
 numFiles = 297
 splitData = []
 
@@ -48,6 +48,7 @@ for x in splitData:
     VOG2FoundProtein[x[1]].append([x[0]]+x[2:])
 noFPcount = 0
 firstFPCount = 0
+noHitFound = 0
 #print VOG2FoundProtein["VOG0006"]
 for x in VOG2FoundProtein:
     VOG2FoundProtein[x].sort(key = lambda x: x[2],reverse = True)
@@ -78,12 +79,13 @@ for x in VOG2FoundProtein:
     if len(VOG2FoundProtein[x]) == 0:
         file.write(delimiter + "NA")
         file.write(delimiter + "NA")
-
+        noHitFound += 1
     file.write("\n")
     
     
 print noFPcount
 print firstFPCount
+print noHitFound
 file.close()
 # -*- coding: utf-8 -*-
 
