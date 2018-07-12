@@ -4,11 +4,13 @@ import matplotlib.pyplot as plt
 
 
 filename = "_allFastaFiles.faa.csv"#"partialFasta.faa.csv"
-numFiles = 297
+filepath ="enhancedpVOGAllSeqResults/"
+numFiles = 30
 splitData = []
 delimiter = ","
 
-file = open('TrustedCuttoffs.dat','r')
+
+file = open('TrustedCuttoffsFinal.dat','r')
 TC = file.readlines()
 file.close()
 
@@ -28,7 +30,7 @@ for x in TC:
 
 for filenum in [y+1 for y in range(numFiles)]:
 
-    file = open(str(filenum)+filename,'r')
+    file = open(filepath+str(filenum)+filename,'r')
 
     data = file.readlines()
 
