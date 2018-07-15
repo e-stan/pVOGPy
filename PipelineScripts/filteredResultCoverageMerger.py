@@ -82,7 +82,7 @@ file1 = open(inputCSV,'w')
 #Calcualte and report FPR and TPR
 if reportingCode == 1:
     file1.write("#BEGIN REPORT:\n#Predicted False Positive Rate: 0.0"+delimiter+"Predicted True Positive Rate: 0.75078\n")
-if reportingCode == 3:
+elif reportingCode == 3:
     file1.write("#BEGIN REPORT:\n#Predicted False Positive Rate: 1.00"+delimiter+"Predicted True Positive Rate: 1.00\n")
 else:
     file3 = open('FlatThresholdFTPRData.pickle','rb')
